@@ -49,8 +49,14 @@
 $font: "Roboto";
 
 // Main colors
-$light-bg-color: #fffced;
-$light-bg-blue-color: #cdf5f6;
+$color-bg-dark: #181818;
+$color-bg-yellow: #ffffdd;
+$color-text-light: white;
+$color-text-dark: black;
+$color-placeholder-dark: #787878;
+$color-link-active: #ffec8b;
+$color-red: #ff4444;
+$color-green: #44cc44;
 
 // Default checkpoints for adaptive
 $pc-l: 1920px;
