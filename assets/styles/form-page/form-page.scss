@@ -38,6 +38,22 @@
     margin-left: 8px;
     @include default-p(28px, 28px, $color-text-dark);
   }
+  &__user-name-error,
+  &__user-mail-error,
+  &__user-phone-error,
+  &__user-msg-error {
+    align-self: flex-start;
+    margin-left: 8px;
+    @include default-p(24px, 24px, $color-red);
+    @media (max-width: $tablet-l) {
+      font-size: 22px;
+      line-height: 22px;
+    }
+    @media (max-width: $phone-l) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
   &__input-name,
   &__input-mail,
   &__input-phone {

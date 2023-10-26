@@ -50,6 +50,10 @@
   display: flex !important;
 }
 
+.error-input {
+  border: 2px solid red !important;
+}
+
 .global-container {
   max-width: 1920px;
   width: 100%;
@@ -109,6 +113,10 @@
 
 .appeared-flex {
   display: flex !important;
+}
+
+.error-input {
+  border: 2px solid red !important;
 }
 
 .global-container {
@@ -203,6 +211,10 @@
 
 .appeared-flex {
   display: flex !important;
+}
+
+.error-input {
+  border: 2px solid red !important;
 }
 
 .global-container {
@@ -300,6 +312,28 @@
   font-size: 28px;
   line-height: 28px;
   color: black;
+}
+.form__user-name-error, .form__user-mail-error, .form__user-phone-error, .form__user-msg-error {
+  align-self: flex-start;
+  margin-left: 8px;
+  padding: 4px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff4444;
+}
+@media (max-width: 768px) {
+  .form__user-name-error, .form__user-mail-error, .form__user-phone-error, .form__user-msg-error {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .form__user-name-error, .form__user-mail-error, .form__user-phone-error, .form__user-msg-error {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 .form__input-name, .form__input-mail, .form__input-phone {
   border: none;
