@@ -266,8 +266,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  row-gap: 10px;
+  row-gap: 20px;
   background-color: #ffffdd;
   border-radius: 20px;
 }
@@ -284,6 +283,22 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
+  color: black;
+}
+.form__name-wrapper, .form__mail-wrapper, .form__phone-wrapper, .form__msg-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.form__label-name, .form__label-mail, .form__label-phone, .form__label-msg {
+  align-self: flex-start;
+  margin-left: 8px;
+  padding: 4px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
   color: black;
 }
 .form__input-name, .form__input-mail, .form__input-phone {
@@ -350,7 +365,6 @@
   }
 }
 .form__textarea-msg {
-  margin-bottom: 10px;
   resize: none;
   border: none;
   outline: none;

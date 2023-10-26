@@ -19,33 +19,45 @@
         <div class="main__container">
           <form action="#" class="form">
             <h2 class="form__headline">Форма для заполнения</h2>
-            <input
-              type="text"
-              name="user-name"
-              placeholder="Ваше имя"
-              required
-              class="form__input-name"
-            />
-            <input
-              type="email"
-              name="user-mail"
-              placeholder="Ваша почта"
-              required
-              class="form__input-mail"
-            />
-            <input
-              type="tel"
-              name="user-phone"
-              placeholder="Ваш телефон"
-              required
-              class="form__input-phone"
-            />
-            <textarea
-              name="user-message"
-              placeholder="Ваше сообщение"
-              required
-              class="form__textarea-msg"
-            ></textarea>
+            <div class="form__name-wrapper">
+              <span class="form__label-name">Имя:</span>
+              <input
+                type="text"
+                name="user-name"
+                placeholder="Как вас зовут?"
+                required
+                class="form__input-name"
+              />
+            </div>
+            <div class="form__mail-wrapper">
+              <span class="form__label-mail">Почта:</span>
+              <input
+                type="email"
+                name="user-mail"
+                placeholder="your-mail@gmail.com"
+                required
+                class="form__input-mail"
+              />
+            </div>
+            <div class="form__phone-wrapper">
+              <span class="form__label-phone">Телефон:</span>
+              <input
+                type="tel"
+                name="user-phone"
+                placeholder="+375(XX)XXX-XX-XX"
+                required
+                class="form__input-phone"
+              />
+            </div>
+            <div class="form__msg-wrapper">
+              <span class="form__label-msg">Сообщение:</span>
+              <textarea
+                name="user-message"
+                placeholder="О чём вы хотите нам написать?"
+                required
+                class="form__textarea-msg"
+              ></textarea>
+            </div>
             <div class="form__btn-info-wrapper">
               <button class="form__submit-btn">Отправить</button>
               <span class="form__btn-note">
@@ -75,5 +87,6 @@
         </div>
       </footer>
     </div>
+    <script src="./assets/scripts/bundle.js"></script>
   </body>
 </html>
