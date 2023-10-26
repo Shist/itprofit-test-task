@@ -1,0 +1,30 @@
+{
+  "name": "itprofit-test-task",
+  "version": "1.0.0",
+  "description": "This is repository with test task for itprofit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shist/itprofit-test-task.git"
+  },
+  "author": "Shist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shist/itprofit-test-task/issues"
+  },
+  "homepage": "https://github.com/Shist/itprofit-test-task#readme",
+  "dependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.2",
+    "@babel/preset-env": "^7.23.2",
+    "babel": "^6.23.0",
+    "core-js": "^3.33.1",
+    "loader": "^2.1.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
