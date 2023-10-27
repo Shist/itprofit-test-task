@@ -142,6 +142,28 @@
   }
 }
 
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
 .modal-window-wrapper {
   padding: 20px;
   position: fixed;
@@ -162,6 +184,10 @@
     background-color: $color-bg-yellow;
     padding: 20px;
     border-radius: 10px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
     @media (max-width: $phone-l) {
       padding: 10px;
     }
