@@ -20,6 +20,11 @@
   border: 2px solid red !important;
 }
 
+// This class is needed to prevent page scrolling while modal is opened
+.modal-open {
+  overflow: hidden !important;
+}
+
 // Global container of whole page
 .global-container {
   max-width: 1920px;

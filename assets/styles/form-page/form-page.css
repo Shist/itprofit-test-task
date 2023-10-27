@@ -54,6 +54,10 @@
   border: 2px solid red !important;
 }
 
+.modal-open {
+  overflow: hidden !important;
+}
+
 .global-container {
   max-width: 1920px;
   width: 100%;
@@ -117,6 +121,10 @@
 
 .error-input {
   border: 2px solid red !important;
+}
+
+.modal-open {
+  overflow: hidden !important;
 }
 
 .global-container {
@@ -215,6 +223,10 @@
 
 .error-input {
   border: 2px solid red !important;
+}
+
+.modal-open {
+  overflow: hidden !important;
 }
 
 .global-container {
