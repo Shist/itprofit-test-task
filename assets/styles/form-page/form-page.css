@@ -503,6 +503,11 @@
   transform: scale(1.1);
   color: #ffec8b;
 }
+.form__btn-info-wrapper .form__submit-btn:disabled {
+  transform: none;
+  color: #bbbbbb;
+  filter: grayscale(0.5);
+}
 .form__btn-info-wrapper .form__btn-note {
   max-width: 280px;
   font-family: "Roboto";
