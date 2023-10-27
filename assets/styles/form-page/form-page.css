@@ -50,6 +50,14 @@
   overflow: hidden !important;
 }
 
+.error-msg {
+  color: #ff4444 !important;
+}
+
+.success-msg {
+  color: #33bb33 !important;
+}
+
 .global-container {
   max-width: 1920px;
   width: 100%;
@@ -59,6 +67,14 @@
   min-height: 100vh;
 }
 
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /* font "Roboto", normal, 400 */
 @font-face {
   font-family: "Roboto";
@@ -111,6 +127,14 @@
   overflow: hidden !important;
 }
 
+.error-msg {
+  color: #ff4444 !important;
+}
+
+.success-msg {
+  color: #33bb33 !important;
+}
+
 .global-container {
   max-width: 1920px;
   width: 100%;
@@ -120,6 +144,14 @@
   min-height: 100vh;
 }
 
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .header {
   background-color: #181818;
 }
@@ -205,6 +237,14 @@
   overflow: hidden !important;
 }
 
+.error-msg {
+  color: #ff4444 !important;
+}
+
+.success-msg {
+  color: #33bb33 !important;
+}
+
 .global-container {
   max-width: 1920px;
   width: 100%;
@@ -214,6 +254,14 @@
   min-height: 100vh;
 }
 
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .footer {
   background-color: #181818;
 }
@@ -502,6 +550,28 @@
   line-height: 20px;
   color: black;
 }
+.form__sending-info-msg {
+  text-align: center;
+  word-break: break-word;
+  padding: 4px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: black;
+}
+@media (max-width: 768px) {
+  .form__sending-info-msg {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .form__sending-info-msg {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 @keyframes animatetop {
   from {
     top: -300px;
@@ -632,6 +702,22 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.dark-spinner {
+  margin: 0 auto;
+  --size: 40px;
+  --color: #181818;
+  --animation-timing-function: linear;
+  --animation-duration: 2s;
+  width: var(--size);
+  height: var(--size);
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, transparent calc(var(--size) / 4), black calc(var(--size) / 4));
+          mask-image: radial-gradient(circle at 50% 50%, transparent calc(var(--size) / 4), black calc(var(--size) / 4));
+  background-image: conic-gradient(from 0deg, var(--color) 0deg, var(--color) 10deg, transparent 10deg, transparent 30deg, var(--color) 30deg, var(--color) 50deg, transparent 50deg, transparent 70deg, var(--color) 70deg, var(--color) 90deg, transparent 90deg, transparent 110deg, var(--color) 110deg, var(--color) 130deg, transparent 130deg, transparent 150deg, var(--color) 150deg, var(--color) 170deg, transparent 170deg, transparent 190deg, var(--color) 190deg, var(--color) 210deg, transparent 210deg, transparent 230deg, var(--color) 230deg, var(--color) 250deg, transparent 250deg, transparent 270deg, var(--color) 270deg, var(--color) 290deg, transparent 290deg, transparent 310deg, var(--color) 310deg, var(--color) 330deg, transparent 330deg, transparent 350deg, var(--color) 350deg, var(--color) 360deg);
+  border-radius: 50%;
+  transform: rotate(0deg);
+  animation: var(--animation-timing-function) var(--animation-duration) infinite spinner;
 }
 
 .main {
