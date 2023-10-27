@@ -1,3 +1,5 @@
+"use strict";
+
 import IMask from "imask";
 
 function formValidation() {
