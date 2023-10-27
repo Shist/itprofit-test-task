@@ -1,0 +1,102 @@
+@import "../vars";
+@import "../template";
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.modal-window-wrapper {
+  padding: 20px;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  &__window {
+    position: relative;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    background-color: $color-bg-yellow;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    @media (max-width: $phone-l) {
+      padding: 10px;
+    }
+  }
+  &__close-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: transparent;
+    background-image: url(../../images/cross.png);
+    background-size: cover;
+  }
+  &__headline {
+    align-self: center;
+    text-align: center;
+    @include default-h(48px, 48px, $color-text-dark);
+    padding-inline: 40px;
+    @media (max-width: $tablet-l) {
+      font-size: 34px;
+      line-height: 34px;
+    }
+    @media (max-width: $phone-l) {
+      padding-inline: 60px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+  &__text-info {
+    text-align: center;
+    @include default-p(28px, 28px, $color-text-dark);
+    @media (max-width: $tablet-l) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+    @media (max-width: $phone-l) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+  &__btn-ok {
+    align-self: center;
+    @include default-btn(300px, $color-text-light, $color-bg-dark);
+    @media (max-width: $phone-l) {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+}
