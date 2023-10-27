@@ -42,14 +42,6 @@
   display: none !important;
 }
 
-.appeared-block {
-  display: block !important;
-}
-
-.appeared-flex {
-  display: flex !important;
-}
-
 .error-input {
   border: 2px solid red !important;
 }
@@ -109,14 +101,6 @@
 }
 .hidden-element {
   display: none !important;
-}
-
-.appeared-block {
-  display: block !important;
-}
-
-.appeared-flex {
-  display: flex !important;
 }
 
 .error-input {
@@ -211,14 +195,6 @@
 }
 .hidden-element {
   display: none !important;
-}
-
-.appeared-block {
-  display: block !important;
-}
-
-.appeared-flex {
-  display: flex !important;
 }
 
 .error-input {
