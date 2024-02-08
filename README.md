@@ -4,7 +4,7 @@
 ## Video demo:
 
 
-https://github.com/Shist/itprofit-test-task/assets/40572268/f440b762-bd7f-4ac7-98a0-d8aecfa80484
+https://github.com/Shist/itprofit-test-task/assets/40572268/969b6025-8c6a-4c75-b20d-8a598bb533b8
 
 
 ---
@@ -21,9 +21,9 @@ https://github.com/Shist/itprofit-test-task/assets/40572268/f440b762-bd7f-4ac7-9
    ```
    npm run webpack-watch
    ```
-4) Run json-server:
+4) Run server:
    ```
-   npm run start-back
+   npm run server
    ```
 5) Start server using MAMP or OpenServer (to make POST method working correctly)
 ---
@@ -35,7 +35,7 @@ https://github.com/Shist/itprofit-test-task/assets/40572268/f440b762-bd7f-4ac7-9
 - Promises
 - Async / Await
 - POST method
-- JSON-server
+- Custom server
 - Modules
 - Imports / Exports
 - Webpack
