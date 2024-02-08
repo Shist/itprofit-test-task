@@ -1,5 +1,5 @@
 const postData = async (url, data) => {
-  const result = await fetch(url, {
+  const response = await fetch(url, {
     method: "POST",
     headers: {
       "Content-type": "application/json",
@@ -7,7 +7,13 @@ const postData = async (url, data) => {
     body: data,
   });
 
-  return await result.json();
+  if (!response.ok) {
+    throw new Error(
+      `Could not fetch data from server, status: ${response.status}`
+    );
+  }
+
+  return await response.json();
 };
 
 export { postData };

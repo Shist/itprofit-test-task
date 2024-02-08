@@ -31,7 +31,7 @@ function formSending(url) {
         form.reset();
       })
       .catch((error) => {
-        infoMsg.textContent = `Во время отправки сообщения произошла ошибка: ${error}`;
+        infoMsg.textContent = `Во время отправки сообщения произошла ошибка. ${error}`;
         infoMsg.classList.add("error-msg");
         infoMsg.classList.remove("success-msg", "hidden-element");
       })

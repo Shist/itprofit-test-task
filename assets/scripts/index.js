@@ -5,7 +5,7 @@ import formValidation from "./modules/form-validation";
 import modalWindow from "./modules/modal-window";
 
 document.addEventListener("DOMContentLoaded", () => {
-  formSending("http://localhost:3000/requests");
+  formSending("http://localhost:9090/api/registration");
   formValidation();
   modalWindow();
 });
